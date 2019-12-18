@@ -38,7 +38,7 @@
                                                        optionalDirectory:nil];
         
         sharedSession.session = [WCSession defaultSession];
-        sharedSession.session.delegate = sharedSession;
+//        sharedSession.session.delegate = sharedSession;
     });
     
     return sharedSession;

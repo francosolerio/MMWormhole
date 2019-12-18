@@ -25,7 +25,7 @@
 
 #import <WatchConnectivity/WatchConnectivity.h>
 
-@interface MMWormholeSessionFileTransiting () <WCSessionDelegate>
+@interface MMWormholeSessionFileTransiting () //<WCSessionDelegate>
 @property (nonatomic, strong) WCSession *session;
 @end
 
@@ -78,5 +78,16 @@
     
     return NO;
 }
+
+- (void)deleteContentForAllMessages {}
+
+
+- (void)deleteContentForIdentifier:(nullable NSString *)identifier {}
+
+
+- (nullable id<NSCoding>)messageObjectForIdentifier:(nullable NSString *)identifier {
+    return nil;
+}
+
 
 @end

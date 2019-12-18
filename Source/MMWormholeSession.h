@@ -27,7 +27,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MMWormholeSession : MMWormhole <WCSessionDelegate>
+@interface MMWormholeSession : MMWormhole // <WCSessionDelegate>
 
 /**
  This method returns a specific instance of MMWormholeSession that should be used for listening. You
